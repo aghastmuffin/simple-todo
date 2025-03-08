@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script defer src="main.js"></script>
+
+    <div class="create-cont">
+        <button class="create-btn" onclick="showinfo()">(i)</button>
+        <button class="create-btn" id="delbtn" onclick="remove()">-</button>
+        <button class="create-btn" id="createbtn" onclick="createNew()">+</button>
+    </div>
+    <div class="prog">
+        <div class="circle">
+            <p id="ccounter">0/1</p>
+            <div class="water" id="water"></div>
+        </div>
+        <!-- <button onclick="updateWaterLevel()">Increase Water Level</button> -->
+    </div>
+    <div class="gentaskhold">
+        <div class="todo-cont">
+            <span style="display: flex; align-items: center;">
+                <button class="dropdown flip" onclick="expand(this)"><span>^</span></button>
+                <p class="task">Task 1 Title</p>
+                <button class="c-btn" onclick="comp(this)">x</button>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
